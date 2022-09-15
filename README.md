@@ -26,16 +26,6 @@ Acceptance Criteria:
 
 * Inquirer package
 * Node.js fs module
-* Jest package
-
-## Unit tests:
-
-![Run Application Tests Screenshot](/assets/images/tests.png)
-
-* Running application tests using the Jest package and the following command:
-```bash
-npm run test
-```
 
 # Application Interaction: 
 
@@ -63,16 +53,12 @@ node index.js
 
 ![Generated HTML Screenshot](/assets/images/generated-html.png)
 
-## Screenshot of Sample HTML file generated using application:
+## Screenshot of Deployed Application:
 
 ![Generated README sample Screenshot](/assets/images/browser1.png) 
 ![Generated README sample Screenshot](/assets/images/browser2.png) 
 
-## URL to Walkthrough Video of Application:
-
-[Click here](https://youtu.be/SfbYbSv-FT0) 
-
-## Link to Sample HTML file:
+## Link to Deployed Application:
 
 [Click here](https://github.com/priscillaluong/profile-generator-nodejs-oop/blob/main/dist/index.html)
 
