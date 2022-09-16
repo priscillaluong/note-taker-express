@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-
+//GET REQUESTS
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
@@ -36,6 +36,7 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
+//POST REQUEST
 app.post('/api/notes', (req, res) => {
     const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     let note = req.body;
@@ -47,7 +48,16 @@ app.post('/api/notes', (req, res) => {
     res.json(dbNotes);
 });
 
+// DELETE REQUEST 
 app.delete('/api/notes/:id', (req, res) => {
+    const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    const newDbNotes = dbNotes.filter(({id}) => id !== req.params.id);
+    fs.writeFileSync("./db/db.json", JSON.stringify(newDbNotes));
+    res.json(newDbNotes);
+});
+
+//PUT REQUEST
+app.put('/api/notes/:id', (req, res) => {
 
 });
 
