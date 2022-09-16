@@ -24,3 +24,14 @@ notes.post('/', (req, res) => {
     fs.writeFileSync("./db/db.json", JSON.stringify(dbNotes));
     res.json(dbNotes);
 });
+
+// DELETE REQUEST 
+
+notes.delete('/:id', (req, res) => {
+    const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    const newDbNotes = dbNotes.filter(({id}) => id !== req.params.id);
+    fs.writeFileSync("./db/db.json", JSON.stringify(newDbNotes));
+    res.json(newDbNotes);
+});
+
+module.exports = notes;

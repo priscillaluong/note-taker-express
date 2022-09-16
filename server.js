@@ -12,9 +12,10 @@ const app = express();
 // app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
+app.use('/api', api);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', api);
+
 
 app.use(express.static('public'));
 
@@ -36,7 +37,7 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-//POST REQUEST
+/* //POST REQUEST
 app.post('/api/notes', (req, res) => {
     const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     let note = req.body;
@@ -46,20 +47,15 @@ app.post('/api/notes', (req, res) => {
     console.log(dbNotes);
     fs.writeFileSync("./db/db.json", JSON.stringify(dbNotes));
     res.json(dbNotes);
-});
+}); */
 
-// DELETE REQUEST 
+/* // DELETE REQUEST 
 app.delete('/api/notes/:id', (req, res) => {
     const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     const newDbNotes = dbNotes.filter(({id}) => id !== req.params.id);
     fs.writeFileSync("./db/db.json", JSON.stringify(newDbNotes));
     res.json(newDbNotes);
-});
-
-//PUT REQUEST
-app.put('/api/notes/:id', (req, res) => {
-
-});
+}); */
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
