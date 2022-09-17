@@ -11,29 +11,29 @@ notes.get('/', (req, res) =>
 );
 
 notes.get('/:id', (req, res) => {
-    const dbNotes = JSON.parse(fs.readFileSync("/Users/priscillaluong/Documents/UOB-BOOTCAMP/note-taker-express/db/db.json", "utf8"));
+    const dbNotes = JSON.parse(fs.readFileSync('db/db.json', "utf8"));
     res.json(dbNotes[Number(req.params.id)]);
 });
 
 //POST REQUEST
 
 notes.post('/', (req, res) => {
-    const dbNotes = JSON.parse(fs.readFileSync("/Users/priscillaluong/Documents/UOB-BOOTCAMP/note-taker-express/db/db.json", "utf8"));
+    const dbNotes = JSON.parse(fs.readFileSync('db/db.json', "utf8"));
     let note = req.body;
     let id = uuid();
     note.id = id;
     dbNotes.push(note);
     console.log(dbNotes);
-    fs.writeFileSync("/Users/priscillaluong/Documents/UOB-BOOTCAMP/note-taker-express/db/db.json", JSON.stringify(dbNotes));
+    fs.writeFileSync('db/db.json', JSON.stringify(dbNotes));
     res.json(dbNotes);
 });
 
 // DELETE REQUEST 
 
 notes.delete('/:id', (req, res) => {
-    const dbNotes = JSON.parse(fs.readFileSync("/Users/priscillaluong/Documents/UOB-BOOTCAMP/note-taker-express/db/db.json", "utf8"));
+    const dbNotes = JSON.parse(fs.readFileSync('db/db.json', "utf8"));
     const newDbNotes = dbNotes.filter(({ id }) => id !== req.params.id);
-    fs.writeFileSync("/Users/priscillaluong/Documents/UOB-BOOTCAMP/note-taker-express/db/db.json", JSON.stringify(newDbNotes));
+    fs.writeFileSync('db/db.json', JSON.stringify(newDbNotes));
     res.json(newDbNotes);
 });
 
