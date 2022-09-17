@@ -2,7 +2,7 @@
 
 ## Application Description
 
-A Node.js command line application that takes in information about employeees in a team and generates a HTML webpage that displays summaries for each person (name, ID, email, job title etc.) Unit tests have also been written to ensure code is maintainable. 
+An application that uses Express.js back end to save, retrieve and delete note data from a JSON file.
 
 [Jest](https://www.npmjs.com/package/jest) has been used for running the unit tests and [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user.
 
