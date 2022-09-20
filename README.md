@@ -35,9 +35,17 @@ node server.js
 ```
 * This will prompt the user with a series of questions about the employees in their team:
 
-![Application Interaction Start Screenshot](/assets/images/command1.png)
+![Application Interaction Start Screenshot](/assets/images/start.png)
 
-![Application Prompts Screenshot](/assets/images/command2.png)
+![Application Prompts Screenshot](/assets/images/notes.png)
+
+![Application Prompts Screenshot](/assets/images/first-saved-note.png)
+
+![Application Prompts Screenshot](/assets/images/second-note.png)
+
+![Application Prompts Screenshot](/assets/images/more-notes.png)
+
+![Application Prompts Screenshot](/assets/images/delete.png)
 
 * Only numerical values can be entered for the ID number. 
 
