@@ -2,7 +2,7 @@
 
 ## Application Description
 
-An application that uses Express.js back end to save, retrieve and delete note data from a JSON file. Application has been deployed to Heroku - link can be found at the [bottom](#link-to-deployed-application:) of this page. 
+An application that uses Express.js back end to save, retrieve and delete note data from a JSON file (db.json). Application has been deployed to Heroku - link can be found at the [bottom](#link-to-deployed-application:) of this page. 
 
 The application will be invoked by using the following command:
 
@@ -29,46 +29,31 @@ Acceptance Criteria:
 
 # Application Interaction: 
 
-* Navigate to the correct folder and run the following command: 
-```bash
-node server.js
-```
-* This will prompt the user with a series of questions about the employees in their team:
+* When application is invoked, users are directed to index.html:
 
-![Application Interaction Start Screenshot](/assets/images/start.png)
+![Application Start - index.html Screenshot](/assets/images/start.png)
 
-![Application Prompts Screenshot](/assets/images/notes.png)
+* The 'Get Started' button then directs users to the notes.html:
 
-![Application Prompts Screenshot](/assets/images/first-saved-note.png)
+![notes.html Screenshot](/assets/images/notes.png)
 
-![Application Prompts Screenshot](/assets/images/second-note.png)
+* New notes can be added by clicking on the '+' icon on the top right of the page, and saved by clicking on the 'save' icon:
 
-![Application Prompts Screenshot](/assets/images/more-notes.png)
+![First Note Saved Screenshot](/assets/images/first-saved-note.png)
 
-![Application Prompts Screenshot](/assets/images/delete.png)
+* Multiple notes can be saved and added. Previously saved notes can be retrieved in the left hand column:
 
-* Only numerical values can be entered for the ID number. 
+![Saved Notes Screenshot](/assets/images/second-note.png)
 
-* The user will also be given a choice to create a summary for an 'Engineer' or 'Intern', or to finish creating the webpage by selecting 'I have finished building the team'.
+![Saved Notes 2 Screenshot](/assets/images/more-notes.png)
 
-![Application Prompts Screenshot](/assets/images/command.png)
+* Saved notes can also be deleted by clicking on the 'trash can' icon next to the note you wish to delete. 
 
-![Application Final Prompt Screenshot](/assets/images/command3.png)
-
-* Once user has finished building their team, a message appears to let them know they have 'successfully created index.html!', which can be found in the 'dist' folder:
-
-![HTML page successfully generated message screenshot](/assets/images/command4.png)
-
-![Generated HTML Screenshot](/assets/images/generated-html.png)
-
-## Screenshot of Deployed Application:
-
-![Generated README sample Screenshot](/assets/images/browser1.png) 
-![Generated README sample Screenshot](/assets/images/browser2.png) 
+![Notes Delete Screenshot](/assets/images/delete.png)
 
 # Link to Deployed Application:
 
-[Click here](https://github.com/priscillaluong/profile-generator-nodejs-oop/blob/main/dist/index.html)
+[Click here](https://shrouded-anchorage-59962.herokuapp.com/)
 
 ### Final note:
 
