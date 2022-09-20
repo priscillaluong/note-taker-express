@@ -29,33 +29,33 @@ Acceptance Criteria:
 
 * Notes.js also uses a uuid.js module which gives each note a unique id when it is saved: 
 
-![notes.js Screenshot](/assets/images/notesjs.png)
-![uuid.js Screenshot](/assets/images/uuid.png)
+![notes.js Screenshot](/Assets/images/notesjs.png)
+![uuid.js Screenshot](/Assets/images/uuid.png)
 
 
 # Application Interaction: 
 
 * When application is invoked, users are directed to index.html:
 
-![Application Start - index.html Screenshot](/assets/images/start.png)
+![Application Start - index.html Screenshot](/Assets/images/start.png)
 
 * The 'Get Started' button then directs users to the notes.html:
 
-![notes.html Screenshot](/assets/images/notes.png)
+![notes.html Screenshot](/Assets/images/notes.png)
 
 * New notes can be added by clicking on the '+' icon on the top right of the page, and saved by clicking on the 'save' icon:
 
-![First Note Saved Screenshot](/assets/images/first-saved-note.png)
+![First Note Saved Screenshot](/Assets/images/first-saved-note.png)
 
 * Multiple notes can be saved and added. Previously saved notes can be retrieved in the left hand column:
 
-![Saved Notes Screenshot](/assets/images/second-note.png)
+![Saved Notes Screenshot](/Assets/images/second-note.png)
 
-![Saved Notes 2 Screenshot](/assets/images/more-notes.png)
+![Saved Notes 2 Screenshot](/Assets/images/more-notes.png)
 
 * Saved notes can also be deleted by clicking on the 'trash can' icon next to the note you wish to delete. 
 
-![Notes Delete Screenshot](/assets/images/delete.png)
+![Notes Delete Screenshot](/Assets/images/delete.png)
 
 # Link to Deployed Application:
 
