@@ -2,14 +2,12 @@
 
 ## Application Description
 
-An application that uses Express.js back end to save, retrieve and delete note data from a JSON file.
-
-[Jest](https://www.npmjs.com/package/jest) has been used for running the unit tests and [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user.
+An application that uses Express.js back end to save, retrieve and delete note data from a JSON file. Application has been deployed to Heroku - link can be found at the [bottom](#link-to-deployed-application:) of this page. 
 
 The application will be invoked by using the following command:
 
 ```bash
-node index.js
+node server.js
 ```
 
 I was given the below User Story and Acceptance Criteria:
@@ -24,14 +22,16 @@ Acceptance Criteria:
 
 ## Required modules / packages:
 
-* Inquirer package
+* Express package
 * Node.js fs module
+* Node.js path module 
+* Route module
 
 # Application Interaction: 
 
 * Navigate to the correct folder and run the following command: 
 ```bash
-node index.js
+node server.js
 ```
 * This will prompt the user with a series of questions about the employees in their team:
 
@@ -58,7 +58,7 @@ node index.js
 ![Generated README sample Screenshot](/assets/images/browser1.png) 
 ![Generated README sample Screenshot](/assets/images/browser2.png) 
 
-## Link to Deployed Application:
+# Link to Deployed Application:
 
 [Click here](https://github.com/priscillaluong/profile-generator-nodejs-oop/blob/main/dist/index.html)
 
