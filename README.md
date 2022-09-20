@@ -14,11 +14,11 @@ I was given the below User Story and Acceptance Criteria:
 
 User Story:
 
-![User Story](/assets/images/user-story.png) 
+![User Story](/Assets/images/user-story.png) 
 
 Acceptance Criteria:
 
-![Acceptance Criteria](/assets/images/acceptance.png) 
+![Acceptance Criteria](/Assets/images/acceptance.png) 
 
 ## Required modules / packages:
 
