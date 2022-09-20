@@ -27,6 +27,12 @@ Acceptance Criteria:
 * Node.js path module 
 * Route module
 
+* Notes.js also uses a uuid.js module which gives each note a unique id when it is saved: 
+
+![notes.js Screenshot](/assets/images/notesjs.png)
+![uuid.js Screenshot](/assets/images/uuid.png)
+
+
 # Application Interaction: 
 
 * When application is invoked, users are directed to index.html:
